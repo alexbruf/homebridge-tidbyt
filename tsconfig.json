@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2018", // ~node10
-    "module": "commonjs",
+    "target": "ES2022", // ~node10
+    "module": "Node16",
     "lib": [
       "es2015",
       "es2016",
       "es2017",
-      "es2018"
+      "es2018",
+			"es2022",
+			"dom"
     ],
     "declaration": true,
     "declarationMap": true,

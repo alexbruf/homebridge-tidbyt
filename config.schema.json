@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "TidbytPlugin",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -9,7 +9,13 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "Tidbyt"
+      },
+			"pixletURL": {
+        "title": "Pixlet URL",
+				"description": "The URL of your Pixlet server",
+        "type": "string",
+        "required": true
       }
     }
   }

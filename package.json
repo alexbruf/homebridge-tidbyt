@@ -1,13 +1,13 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
+  "displayName": "Homebridge Tidbyt",
+  "name": "tidbyt-plugin",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "A homebridge plugin for tidbyt utilizing my custom tidbyt server for infinite customization",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "https://github.com/alexbruf/homebridge-tidbyt.git"
   },
   "bugs": {
     "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
@@ -19,7 +19,7 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src/**.ts --max-warnings=0",
-    "watch": "npm run build && npm link && nodemon",
+    "watch": "bun run build && bun link && nodemon",
     "build": "rimraf ./dist && tsc",
     "prepublishOnly": "npm run lint && npm run build"
   },
